@@ -1,4 +1,4 @@
-FROM FROM archlinux/archlinux:base-devel
+FROM archlinux/archlinux:base-devel
 
 # RUN echo "Server = https://mirrors.aliyun.com/archlinux/\$repo/os/\$arch" > /etc/pacman.d/mirrorlist
 RUN echo "Server = https://mirrors.kernel.org/archlinux/\$repo/os/\$arch" > /etc/pacman.d/mirrorlist

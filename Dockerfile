@@ -22,11 +22,11 @@ RUN git clone https://aur.archlinux.org/yay.git \
   && cd yay \
   && makepkg -sri --needed --noconfirm \
   && cd \
-  # Clean up
-  && rm -rf .cache yay
   
-RUN yay -S --noconfirm ttf-ms-win10-auto-zh_cn
+RUN yay -S --noconfirm ttf-ms-win10-auto-zh_cn && rm -rf .cache yay
+
+USER root
 
 WORKDIR /data
 
-ENTRYPOINT [ "/bin/zsh" ]
+ENTRYPOINT [ "/bin/bash" ]

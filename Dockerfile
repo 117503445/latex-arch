@@ -7,7 +7,7 @@ RUN echo "Server = https://mirrors.kernel.org/archlinux/\$repo/os/\$arch" > /etc
 
 RUN pacman -Syyu --noconfirm
 
-RUN pacman -S git texlive-most texlive-lang perl-yaml-tiny perl-file-homedir perl-unicode-linebreak zsh --noconfirm
+RUN pacman -S git texlive-most texlive-lang perl-yaml-tiny perl-file-homedir perl-unicode-linebreak --noconfirm
 
 # https://github.com/testcab/docker-yay/blob/master/Dockerfile
 # makepkg user and workdir
@@ -22,6 +22,7 @@ RUN git clone https://aur.archlinux.org/yay.git \
   && cd yay \
   && makepkg -sri --needed --noconfirm \
   && cd \
+  && rm -rf .cache yay
   
 RUN yay -S --noconfirm ttf-ms-win10-auto-zh_cn && rm -rf .cache yay
 

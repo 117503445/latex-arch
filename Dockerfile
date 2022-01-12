@@ -25,7 +25,7 @@ RUN git clone https://aur.archlinux.org/yay.git \
   # Clean up
   && rm -rf .cache yay
   
-RUN yay -S ttf-ms-win10-zh_cn
+RUN yay -S ttf-ms-win10-auto-zh_cn
 
 WORKDIR /data
 

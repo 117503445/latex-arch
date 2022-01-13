@@ -9,4 +9,4 @@ RUN pacman -S git texlive-most texlive-lang perl-yaml-tiny perl-file-homedir per
 
 WORKDIR /root/data
 
-ENTRYPOINT [ "/bin/bash" ]
+CMD [ "/bin/bash" ]

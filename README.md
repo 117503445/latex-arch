@@ -23,6 +23,7 @@ docker run -it --rm -v ${PWD}:/root/data 117503445/latex-arch:main latexmk
 docker run -it --rm -v ${PWD}:/root/data 117503445/latex-arch:main xelatex main.tex
 
 # optional: custom font
+# https://github.com/note286/xduugtp#gnulinux to get fonts
 docker run -it --rm -v ${PWD}:/root/data -v ${PWD}/fonts:/usr/share/fonts 117503445/latex-arch:main latexmk
 ```
 

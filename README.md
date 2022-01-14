@@ -40,7 +40,7 @@ docker run -d -it -v ${PWD}:/root/data -v ${PWD}/fonts:/usr/share/fonts 11750344
 
 2. VS Code install Docker extension <https://code.visualstudio.com/docs/containers/overview>
 
-3. Attach Shell
+3. Attach VS Code
 
 ![attach](assets/attach.png)
 

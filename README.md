@@ -28,8 +28,6 @@ docker run -it --rm -v ${PWD}:/root/data -v ${PWD}/fonts:/usr/share/fonts 117503
 
 ## VS Code (recommend)
 
-
-
 1. run LaTeX Docker Container
 
 ```sh
@@ -45,6 +43,6 @@ docker run -d -it -v ${PWD}:/root/data -v ${PWD}/fonts:/usr/share/fonts 11750344
 
 ![attach](assets/attach.png)
 
-4. install [LaTeX](https://marketplace.visualstudio.com/items?itemName=mathematic.vscode-latex) extension, not LaTeX Workshop !!!!
+4. install [LaTeX](https://marketplace.visualstudio.com/items?itemName=mathematic.vscode-latex) (not LaTeX Workshop !!!!) and [vscode-pdf](https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf) extension in Docker Container.
 
 5. Enjoy :)

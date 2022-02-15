@@ -5,7 +5,7 @@ RUN echo "Server = https://mirrors.kernel.org/archlinux/\$repo/os/\$arch" > /etc
 
 RUN pacman -Syyu --noconfirm
 
-RUN pacman -S git texlive-most texlive-lang perl-yaml-tiny perl-file-homedir perl-unicode-linebreak --noconfirm
+RUN pacman -S git texlive-most texlive-lang perl-yaml-tiny perl-file-homedir perl-unicode-linebreak make gnu-free-fonts --noconfirm
 
 WORKDIR /root/data
 

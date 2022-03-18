@@ -2,15 +2,10 @@ name: ci
 
 on:
   schedule:
-    - cron: '0 10 * * *' # everyday at 10 am
+    - cron: '0 0 * * *' # everyday at 00:00, UTC+0
   push:
     branches:
       - 'main'
-  #   tags:
-  #     - 'v*.*.*'
-  # pull_request:
-  #   branches:
-  #     - 'master'
 
 jobs:
   docker:

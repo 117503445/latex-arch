@@ -55,4 +55,5 @@ export PATH=~/.vscode-server/bin/${commit_sha}/bin/remote-cli:$PATH
 
 echo "export ~/.vscode-server/bin/${commit_sha}/bin/remote-cli=$PATH" > /etc/environment
 
-code --install-extension mathematic.vscode-latex tomoki1207.pdf
+code --install-extension mathematic.vscode-latex 
+code --install-extension tomoki1207.pdf

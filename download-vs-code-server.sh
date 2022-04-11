@@ -51,7 +51,7 @@ mkdir -vp ~/.vscode-server/bin/"${commit_sha}"
 # Extract the tarball to the right location.
 tar --no-same-owner -xzv --strip-components=1 -C ~/.vscode-server/bin/"${commit_sha}" -f "/tmp/${archive}"
 
-export ~/.vscode-server/bin/${commit_sha}/bin/remote-cli=$PATH
+export PATH=~/.vscode-server/bin/${commit_sha}/bin/remote-cli:$PATH
 
 echo "export ~/.vscode-server/bin/${commit_sha}/bin/remote-cli=$PATH" > /etc/environment
 

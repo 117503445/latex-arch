@@ -48,6 +48,6 @@ docker run -d -it -v ${PWD}:/root/data -v ${PWD}/fonts:/usr/share/fonts 11750344
 
 ![attach](assets/attach.png)
 
-4. install [LaTeX](https://marketplace.visualstudio.com/items?itemName=mathematic.vscode-latex) (not LaTeX Workshop !!!!) and [vscode-pdf](https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf) extension in Docker Container. In fact, these extensions have been installed in docker image.
+4. install [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=james-yu.latex-workshop) extension in Docker Container. In fact, these extensions have been installed in docker image.
 
 5. Enjoy :)
